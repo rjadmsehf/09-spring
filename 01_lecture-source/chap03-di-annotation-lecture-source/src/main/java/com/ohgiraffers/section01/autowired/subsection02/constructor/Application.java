@@ -17,9 +17,9 @@ public class Application {
         List<BookDTO> books = bookService.selectAllBooks();
         for (BookDTO book : books){
             System.out.println("book = " + book);
-        }
+        }                                                           // 필기 bookDTO 에 등록된 모든 정보 출력하기
 
-        System.out.println(bookService.searchBookBySequence(1));
+        System.out.println("하나씩 = " + bookService.searchBookBySequence(1));    //필기 bookDTO 가져올 정보 1번을 출력하기
 
 
     }

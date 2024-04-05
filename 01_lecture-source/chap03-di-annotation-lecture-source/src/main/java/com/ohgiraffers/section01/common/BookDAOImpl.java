@@ -14,8 +14,8 @@ public class BookDAOImpl implements BookDAO{
 
     public BookDAOImpl() {
         bookList = new HashMap<>();
-        bookList.put(1, new BookDTO(1, 123456, "혼자공부하는자바", "조평훈", "한빛출판", new Date()));
-        bookList.put(2, new BookDTO(2, 654321, "혼자공부하는자바2", "조훈평", "두빛출판", new Date()));
+        bookList.put(1, new BookDTO(1, 123456, "혼자공부하는자바", "전준규", "한빛출판", new Date()));
+        bookList.put(2, new BookDTO(2, 654321, "혼자공부하는자바2", "준규", "두빛출판", new Date()));
     }
 
     @Override

@@ -14,7 +14,8 @@ public class Application {
 
         ApplicationContext context = new AnnotationConfigApplicationContext("com.ohgiraffers.section01");
 
-        com.ohgiraffers.section01.autowired.subsection02.constructor.BookService bookService = context.getBean("ServiceSetter", com.ohgiraffers.section01.autowired.subsection02.constructor.BookService.class);
+        com.ohgiraffers.section01.autowired.subsection02.constructor.BookService bookService = context.getBean
+                ("ServiceSetter", com.ohgiraffers.section01.autowired.subsection02.constructor.BookService.class);
 
         List<BookDTO> books = bookService.selectAllBooks();
         for (BookDTO book : books){
