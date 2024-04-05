@@ -19,7 +19,7 @@ public class Application {
             System.out.println("bean = " + bean);
         }
 
-        Product carpBread = context.getBean("carpBread", Bread.class);      //필기. 빈 등록하기
+        Product carpBread = context.getBean("carpBread", Bread.class);           //필기. 빈 등록하기
         Product milk = context.getBean("milk", Beverage.class);
         Product water = context.getBean("water", Beverage.class);
 
