@@ -37,6 +37,7 @@ public class Application {
 
         System.out.println("cart1 의 hashcode : " + cart1.hashCode());               //필기. hashCode 상으로도 동일한 위치라는것을 알수있다. 싯팔
         System.out.println("cart2 의 hashcode : " + cart2.hashCode());
+        // 필기 
     }
 
 }
