@@ -1,16 +1,18 @@
-package com.ohgiraffers.section01.scope.subsection02.prototype;
+package com.ohgiraffers.section02.initdestory.subsection02.annotation;
 
 import com.ohgiraffers.common.Beverage;
 import com.ohgiraffers.common.Bread;
 import com.ohgiraffers.common.Product;
 import com.ohgiraffers.common.ShoppingCart;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 import java.util.Date;
 
 @Configuration
+@ComponentScan("com.ohgiraffers.section02.initdestory.subsection02.annotation")
 public class ContextConfiguration {
 
     @Bean
@@ -34,5 +36,6 @@ public class ContextConfiguration {
     public ShoppingCart cart() {
         return new ShoppingCart();
     }
+
 
 }

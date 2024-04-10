@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.scope.subsection02.prototype;
+package com.ohgiraffers.section02.initdestory.subsection01.java;
 
 import com.ohgiraffers.common.Beverage;
 import com.ohgiraffers.common.Bread;
@@ -33,6 +33,13 @@ public class ContextConfiguration {
     @Scope("prototype")
     public ShoppingCart cart() {
         return new ShoppingCart();
+    }
+
+
+    @Bean(initMethod = "openShop", destroyMethod = "closeShop")
+    public Owner owner() {
+
+        return new Owner();
     }
 
 }
